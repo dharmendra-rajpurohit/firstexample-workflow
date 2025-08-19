@@ -19,8 +19,7 @@
           run : |
             import platform
             print(" Python version: ", platform.python_version())
-            print(" Pip version: ", platform.pip_version())
-            print(" Platform processor",platform.processor())
+            print(" Platform processor: ", platform.processor())
           shell : python
 
     run-windows-command :
@@ -46,6 +45,5 @@
           run : |
             import platform
             print(" Python version: ", platform.python_version())
-            print(" Pip version: ", platform.pip_version())
-            print(" Platform processor",platform.processor())
+            print(" Platform processor: ", platform.processor())
           shell : python
