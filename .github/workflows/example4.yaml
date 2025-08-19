@@ -14,7 +14,7 @@ jobs :
 
     steps :
       - name : Print Environment Variables
-        run : echo '$LIKE and ${{ env.SUBSCRIBE  }} to my $CHANNEL_NAME channel'
+        run : echo "$LIKE and ${{ env.SUBSCRIBE  }} to my $CHANNEL_NAME channel"
 
         env:
           CHANNEL_NAME: Tavant Bangalore India
