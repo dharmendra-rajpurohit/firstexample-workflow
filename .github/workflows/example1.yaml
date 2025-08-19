@@ -7,16 +7,41 @@
     runs-on: ubuntu-latest
     steps:
       - name: string  
-        run: echo "Hello, World! - Tavant India"
+        run: echo "Hello, World! - Tavant Bangalore India"
 
       - name: multiline script
         run: |
           node -v
           npm -v
           echo "This is a multiline script."
+
       - name: python commands
         run : |
           import platform
           print(" Python version: ", platform.python_version())
           print(" Pip version: ", platform.pip_version())
-        shell : python  
+          print(" Platform processor",platform.processor())
+        shell : python
+
+  # run-windows-command :
+  #   runs-on: windows-latest
+  #   steps:
+  #     - name: Director powershell  
+  #       run: Get-Location
+
+  #     - name: Director Bash
+  #       run: pwd
+  #       shell: bash
+
+  #     - name: multiline script
+  #       run: |
+  #         node -v
+  #         npm -v
+  #         echo "This is a multiline script."
+  #     - name: python commands
+  #       run : |
+  #         import platform
+  #         print(" Python version: ", platform.python_version())
+  #         print(" Pip version: ", platform.pip_version())
+  #         print(" Platform processor",platform.processor())
+  #       shell : python
