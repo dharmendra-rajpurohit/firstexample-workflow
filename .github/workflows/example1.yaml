@@ -33,7 +33,7 @@
           shell: bash
 
         - name: string  
-          run: echo "Hello, World! - Tavant Bangalore India"
+          run: echo "Hello, World! - Tavant India"
 
         - name: multiline script
           run: |
