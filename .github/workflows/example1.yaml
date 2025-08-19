@@ -14,3 +14,9 @@
           node -v
           npm -v
           echo "This is a multiline script."
+      - name: python commands
+        run : |
+          import platform
+          print(" Python version: ", platform.python_version())
+          print(" Pip version: ", platform.pip_version())
+        shell : python  
